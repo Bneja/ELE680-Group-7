@@ -2,7 +2,7 @@
 
 This project studies how training-time image augmentation affects tumor classification when models are evaluated on a hospital they did not see during training. We use the Camelyon17-WILDS benchmark and compare a compact CNN (SmallCNN) with ResNet18, each trained with and without augmentation.
 
-The project report is [`ELE680_Group7_Report.docx`](ELE680_Group7_Report.docx). The notebooks contain the dataset exploration, four training experiments, and an optional model comparison.
+The project report is [`ELE680_Group7_Report.pdf`](ELE680_Group7_Report.pdf). The notebooks contain the dataset exploration, four training experiments, and an optional model comparison.
 
 ## Repository contents
 

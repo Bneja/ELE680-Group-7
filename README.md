@@ -91,3 +91,16 @@ After the training notebooks complete, `camelyon17_model_comparison_submission.i
 ## Evaluation
 
 The notebooks report accuracy, balanced accuracy, and ROC-AUC. The selected checkpoint is based on OOD validation balanced accuracy; the official held-out test split is evaluated after checkpoint selection. The project compares the four architecture/augmentation combinations and does not claim clinical readiness.
+
+## Experimental Results
+
+The four model configurations were evaluated on the official Camelyon17-WILDS held-out test set. The results are summarized below.
+
+| Model | Data Augmentation | Test Accuracy (%) | Balanced Accuracy (%) | ROC-AUC |
+|---|---|---:|---:|---:|
+| SmallCNN | No | 85.39 | 85.39 | 0.9280 |
+| SmallCNN | Yes | 91.22 | 91.22 | 0.9552 |
+| ResNet18 | No | 61.45 | 61.45 | 0.6526 |
+| ResNet18 | Yes | 81.16 | 81.16 | 0.9451 |
+
+The augmented SmallCNN achieved the highest test accuracy of 91.22% and ROC-AUC of 0.9552. Data augmentation improved test accuracy by 5.83 percentage points for SmallCNN and 19.71 percentage points for ResNet18. These results suggest that data augmentation improved generalization across hospitals in this experimental setting.
